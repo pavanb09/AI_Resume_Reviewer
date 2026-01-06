@@ -4,7 +4,7 @@ public class ApiResponse<T> {
 	
 	private String message;
 	private T data;
-	private boolean status;
+	private boolean status = true;
 	
 	public ApiResponse(String message, T data, boolean status) {
 		super();

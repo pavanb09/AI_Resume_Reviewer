@@ -19,7 +19,7 @@ public class ResumeController {
 	@PostMapping("/review")
 	public ApiResponse<ResumeResponse> reviewResume(@RequestBody ResumeRequest resume){
 		
-		System.out.println(resume.getResumeText());
+//		System.out.println(resume.getResumeText());
 		
 		String dummy = "Overall Feedback:\r\n"
 				+ "Your resume shows a solid foundation in backend development with Java and Spring Boot.\r\n"
