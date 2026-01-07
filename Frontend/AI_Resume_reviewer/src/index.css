@@ -7,6 +7,8 @@ button{
   padding:10px;
   font-size: 1rem;
   margin: 10px;
+  color: #545654;
+  font-weight: 600;
 }
 
 h1{
@@ -14,7 +16,7 @@ h1{
   text-align: center;
   text-shadow: 4px 2px 4px rgb(0, 0, 0,0.3);
   letter-spacing: 5px;
-  background-color: beige;
+  /* background-color: beige; */
 }
 
 form{
@@ -47,12 +49,11 @@ form>textarea{
 }
 
 .result-container{
-  background-color: rgb(248, 230, 248);
+  background-color: rgb(255, 224, 202);
   padding: 1rem;
   margin: 1rem;
   border-radius: 20px;
   box-shadow: 0px 4px 10px rgb(0, 0, 0.2);
-  color: rgb(13, 1, 16);
   width: 60vw;
   display: flex;
   justify-self: center;
@@ -64,6 +65,11 @@ form>textarea{
   display: flex;
 }
 
-.result-container>pre{
+.result-container > pre {
+  font-size: 16px;
   font-weight: 600;
+  white-space: pre-wrap;   /* preserves line breaks */
+  word-wrap: break-word;   /* breaks long words */
+  overflow-wrap: break-word;
+  width: 100%;
 }

@@ -6,6 +6,7 @@ const Review = () =>{
     const [data, setData] = useState("");
     const [resume,setResume] = useState("");
     const [loading,setLoading] = useState(false);
+    const [color, setColor] = useState("green");
 
 
 
@@ -23,8 +24,11 @@ const Review = () =>{
             );
             console.log(res.data);
             setData(res.data.data.feedback);
+            setColor("green");
         }catch(error){
+            
             setData("Something went wrong........")
+            setColor("red");
 
         }finally{
             setLoading(false);
@@ -64,10 +68,13 @@ const Review = () =>{
         </div>
             
         </form>
-
+        
+        {data &&
         <div className="result-container">
-            <pre>{data}</pre>
-        </div>
+            <pre
+            style={{"color":color}}
+            >{data} </pre>
+        </div>}
         </>
     )
 
