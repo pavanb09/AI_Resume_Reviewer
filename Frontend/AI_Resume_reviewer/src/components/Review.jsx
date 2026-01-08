@@ -19,7 +19,7 @@ const Review = () =>{
             if(!resume.trim()) return;
 
             const res = await axios.post(
-                         "http://localhost:8081/api/review",
+                         "https://ai-resume-reviewer-br0r.onrender.com/api/review",
                         { resumeText: resume }
             );
             console.log(res.data);
