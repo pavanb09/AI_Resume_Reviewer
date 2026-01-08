@@ -46,19 +46,27 @@ It helps candidates understand their strengths, weaknesses, and areas of improve
 ## 📁 Project Structure
 
 AI_Resume_Reviewer/
+
 ├── backend/
+
 │ └── ResumeReviewer/
+
 │ ├── Dockerfile
+
 │ ├── pom.xml
+
 │ ├── src/
+
 │ └── application.properties
+
 ├── frontend/
+
 │ ├── src/
+
 │ └── package.json
+
 └── README.md
 
-yaml
-Copy code
 
 ---
 
@@ -70,10 +78,8 @@ The application uses environment variables to keep sensitive data secure.
 
 GROQ_API_KEY=your_groq_api_key
 
-bash
-Copy code
 
 ### Spring Boot Configuration
 
-```properties
+properties
 groq.api.key=${GROQ_API_KEY}
